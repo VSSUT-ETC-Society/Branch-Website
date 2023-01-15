@@ -1,12 +1,18 @@
-import React from 'react'
-import "./App.css"
+    import "./App.css";
+    import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+    import React from "react";
+    import hero from "./components/hero/hero";
 
-const App = () => {
-  return (
-    <div>
-      <div className='main'>Website is comming soon!</div>
-    </div>
-  );
-}
+    function App() {
+    return (
+        <>
+        <Router>
+            <Switch>
+            <Route exact path="/" component={hero} />
+            </Switch>
+        </Router>
+        </>
+    );
+    }
 
-export default App
+    export default App;
