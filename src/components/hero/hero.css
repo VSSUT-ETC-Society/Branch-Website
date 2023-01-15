@@ -36,11 +36,11 @@
     }
     .hero {
         background-position: right;
-        padding-top: 50%;
+        padding-top: 10%;
         height: inherit;
     }
     .hero .row {
-        width: 100%;
+    width: 100%;
     }
     .hero #heading {
     text-align: center;
