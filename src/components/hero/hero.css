@@ -37,14 +37,15 @@
     .hero {
         background-position: right;
         padding-top: 10%;
-        height: inherit;
+        height: 100vh;
     }
     .hero .row {
     width: 100%;
     }
     .hero #heading {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 100px;
     }
     .center{
         text-align: center;

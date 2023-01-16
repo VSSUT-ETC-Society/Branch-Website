@@ -35,7 +35,7 @@
                             </p>
                             <div className="button">
                                 <button className="primary-btn">
-                                Read More >{" "}
+                                Read More
                                 <i className="fa fa-long-arrow-alt-right"></i>
                                 </button>
                             </div>

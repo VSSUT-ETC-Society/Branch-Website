@@ -32,11 +32,8 @@ const Header = () => {
               <Link to="/journal">About Us</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link className="reg" to="/contact">REGISTER</Link>
             </li>
-            <div className="start1">
-              <div className="button">REGISTER</div>
-            </div>
           </ul>
           <div className="start">
             <div className="button">LOGO</div>

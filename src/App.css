@@ -160,10 +160,11 @@ p {
     padding-top: 50%;
     height: 80vh;
   }
-  button {
+  .primary-btn {
   position: relative;
   transform: translate(-50%, 0%);
   left: 50%;
   margin: 30px 0 30px 0px;
+  cursor: pointer;
 }
 }
