@@ -8,9 +8,11 @@ const Heading = ({ subtitle, title1, title2, title3 }) => {
         <h3>{subtitle} </h3>
         <h1>{title1} </h1>
 
-        <h1>
-          {title2} <span className="yellow">{title3}</span>{" "}
-        </h1>
+        <div className="up">
+          <h1>
+            {title2} <span className="yellow">{title3}</span>{" "}
+          </h1>
+        </div>
       </div>
     </>
   );

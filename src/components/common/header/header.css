@@ -14,7 +14,9 @@
 /*--------header------------*/
 header {
   background-color: #232536;
-  /* margin: 0 30px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header .nav {
   display: flex !important;
@@ -66,7 +68,7 @@ header ul li a:hover {
   }
   header {
     margin: 0;
-    position: relative;
+    position: fixed;
   }
   header ul.flexSB {
     display: none;

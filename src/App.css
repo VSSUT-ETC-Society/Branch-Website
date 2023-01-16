@@ -85,6 +85,9 @@ p {
   line-height: 30px;
   font-size: 16px;
 }
+.up{
+  margin-top: -15px;
+}
 
 .back {
   background-image: url("../public/assets/back.webp");
