@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import Head from "./Head"
 import "./header.css"
 
 const Header = () => {
@@ -8,42 +7,51 @@ const Header = () => {
 
   return (
     <>
-      <Head />
       <header>
-        <nav className='flexSB'>
-          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
+        <nav className="flexSB">
+          <ul
+            className={click ? "mobile-nav" : "flexSB "}
+            onClick={() => setClick(false)}
+          >
             <li>
-              <Link to='/'>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to='/courses'>All Courses</Link>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to="/about">Faculties</Link>
             </li>
             <li>
-              <Link to='/team'>Team</Link>
+              <Link to="/team">Students</Link>
             </li>
             <li>
-              <Link to='/pricing'>Pricing</Link>
+              <Link to="/pricing">Projects</Link>
             </li>
             <li>
-              <Link to='/journal'>Journal</Link>
+              <Link to="/journal">About Us</Link>
             </li>
             <li>
-              <Link to='/contact'>Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
+            <div className="start1">
+              <div className="button">REGISTER</div>
+            </div>
           </ul>
-          <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
+          <div className="start">
+            <div className="button">LOGO</div>
           </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+          <button className="toggle" onClick={() => setClick(!click)}>
+            {click ? (
+              <i className="fa fa-times"> </i>
+            ) : (
+              <i className="fa fa-bars"></i>
+            )}
           </button>
         </nav>
       </header>
     </>
-  )
+  );
 }
 
 export default Header

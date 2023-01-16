@@ -13,8 +13,8 @@
 /*--------head------------*/
 /*--------header------------*/
 header {
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 30px;
+  background-color: #232536;
+  /* margin: 0 30px; */
 }
 header .nav {
   display: flex !important;
@@ -23,7 +23,9 @@ header li {
   margin-right: 40px;
 }
 header ul {
-  padding: 30px 20px;
+  padding: 30px 0px;
+  position: absolute;
+  right: 0;
 }
 header ul li a {
   color: #fff;
@@ -35,9 +37,17 @@ header ul li a:hover {
 }
 .start {
   background-color: #1eb2a6;
-  padding: 30px 70px;
+  padding: 30px 20px;
   color: #fff;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.start1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%,-50%);
+  background-color: #ffffff;
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
 }
 .toggle {
   display: none;
@@ -46,10 +56,10 @@ header ul li a:hover {
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
+    background: none;
   }
   header {
     margin: 0;
-    background-color: #1eb2a6;
     position: relative;
   }
   header ul.flexSB {
@@ -59,8 +69,9 @@ header ul li a:hover {
     margin-bottom: 20px;
   }
   .toggle {
+    width: 10vw;
     display: block;
-    background: none;
+    background: white;
     color: #fff;
     font-size: 30px;
     position: absolute;
