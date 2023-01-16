@@ -87,10 +87,18 @@ header ul li a:hover {
     top: -20px;
   }
   .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 7vh;
+    top: 8vh;
     left: 0;
     width: 100vw;
-    background-color: #1eb2a6;
+    background-color: #5e5e5e;
+  }
+  .reg{
+    background: none;
+    color: #fff;
   }
 }
