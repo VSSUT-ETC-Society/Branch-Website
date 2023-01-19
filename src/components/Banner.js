@@ -64,26 +64,29 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="">ESTABLISHED In 1976</span>
                   <h1>
-                    {`Hi! I'm Judy`}{" "}
-                    <span
+                    {`Enhancing the engineer in You`}{" "}
+                    {/* <span
                       className="txt-rotate"
                       dataPeriod="1000"
                       data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
-                    </span>
+                    </span> */}
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    By Electronics and Telecommunication Department | Nov 28,
+                    2022<br></br>
+                    Our vision is to develop new ideas in the field of
+                    communicaion to enable students to learn new technologies,
+                    assimilate appropriate skills and deliver meaningful
+                    services to the global society and improve the quality of
+                    life by training them with strength of character, leadership
+                    and self-attainment.
                   </p>
                   <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    Read More<ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

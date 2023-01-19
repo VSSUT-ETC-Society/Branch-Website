@@ -109,6 +109,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
+.log{
+    width: 60px;
+}
 span.navbar-text {
     display: flex;
     align-items: center;
@@ -234,7 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/img/overlay.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.5) ), url('./assets/img/overlay.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,7 +286,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  width: 80%;
+  margin-left: 80px;
+  margin-top: -20px;
+  animation: updown 3s ease-in-out infinite;
 }
 @keyframes updown {
     0% {
@@ -360,9 +366,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
+.cus{
+  margin-bottom: 8%;
+}
+
 .project .nav.nav-pills {
   width: 72%;
-  margin: 0 auto;
+  margin: 40px auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
