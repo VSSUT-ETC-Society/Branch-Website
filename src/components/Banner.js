@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/etc.png";
