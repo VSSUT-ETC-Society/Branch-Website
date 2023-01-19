@@ -54,7 +54,7 @@ export const NavBar = () => {
               <Nav.Link
                 href="#projects"
                 className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                  activeLink === "projects" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
@@ -63,7 +63,7 @@ export const NavBar = () => {
               <Nav.Link
                 href="/#"
                 className={
-                  activeLink === "projects"
+                  activeLink === "about"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
@@ -74,7 +74,7 @@ export const NavBar = () => {
               <Nav.Link
                 href="/#"
                 className={
-                  activeLink === "projects"
+                  activeLink === "courses"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
@@ -83,9 +83,9 @@ export const NavBar = () => {
                 Courses
               </Nav.Link>
               <Nav.Link
-                href="/#"
+                href="#skills"
                 className={
-                  activeLink === "projects"
+                  activeLink === "skills"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
@@ -119,7 +119,7 @@ export const NavBar = () => {
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Let’s Connect</span>
+                  <span>REGISTER</span>
                 </button>
               </HashLink>
             </span>
