@@ -11,33 +11,33 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "PROJECT!",
+      description: "PROJECT!",
       imgUrl: projImg3,
     },
   ];
@@ -57,10 +57,7 @@ export const Projects = () => {
                   <h2>Featured Projects and Researches</h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    typesetting industry.
                   </p>
                   <Tab.Container
                     className="cus"

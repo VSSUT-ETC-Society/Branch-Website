@@ -64,7 +64,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="">ESTABLISHED In 1976</span>
+                  <span className="">ESTABLISHED IN 1972</span>
                   <h1>
                     {`Enhancing the engineer in You`}{" "}
                     {/* <span

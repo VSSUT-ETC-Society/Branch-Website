@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import "../App.css";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -124,7 +125,7 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit">
+                        <button type="submit" className="but">
                           <span>{buttonText}</span>
                         </button>
                       </Col>

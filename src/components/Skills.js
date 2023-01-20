@@ -1,32 +1,33 @@
-import React from 'react';
+import React from "react";
 import etc from "../assets/img/etc.png";
 // import meter2 from "../assets/img/etc.png";
 // import meter3 from "../assets/img/etc.png";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 // import arrow1 from "../asses/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
+import "../App.css";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
 
   return (
@@ -35,34 +36,67 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>List of Faculty Committee</h2>
-              <p>
+              <div className="ohh">
+                <h2>List of Faculty Committee</h2>
+                {/* <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
                 dummy text.
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={etc} alt="" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={etc} alt="" />
-                  <h5>Brand Identity</h5>
-                </div>
-                <div className="item">
-                  <img src={etc} alt="" />
-                  <h5>Logo Design</h5>
-                </div>
-                <div className="item">
-                  <img src={etc} alt="" />
-                  <h5>Web Development</h5>
-                </div>
-              </Carousel>
+              </p> */}
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="owl-carousel owl-theme skill-slider"
+                >
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                </Carousel>
+              </div>
+              <br></br>
+              <div className="ohh">
+                <h2>List of staffs</h2>
+                {/* <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
+              </p> */}
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="owl-carousel owl-theme skill-slider"
+                >
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                  <div className="item">
+                    <img src={etc} alt="" />
+                    <h5>HOD</h5>
+                  </div>
+                </Carousel>
+              </div>
             </div>
           </div>
         </div>
@@ -70,4 +104,4 @@ export const Skills = () => {
       <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
-}
+};
