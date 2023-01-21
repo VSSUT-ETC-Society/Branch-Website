@@ -37,7 +37,7 @@
             <div className="col-12">
                 <div className="skill-bx wow zoomIn">
                 <div className="ohh">
-                    <h2>List of Faculty Committee</h2>
+                    <h2>Courses Offered</h2>
                     <h3>BTECH</h3>
                     {/* <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -77,7 +77,7 @@
 
         </div> */}
 
-                            <div class="buttons" style={{ width: 100 }}>
+                            <div class="buttons" style={{ width: '100%' }}>
                             <button>View</button>
                             {/* <button>Subscribe</button> */}
                             </div>
@@ -112,7 +112,7 @@
 
         </div> */}
 
-                            <div class="buttons" style={{ width: 100 }}>
+                            <div class="buttons" style={{ width: '100%' }}>
                             <button>View</button>
                             {/* <button>Subscribe</button> */}
                             </div>
@@ -147,7 +147,7 @@
 
         </div> */}
 
-                            <div class="buttons" style={{ width: 100 }}>
+                            <div class="buttons" style={{ width: '100%' }}>
                             <button>View</button>
                             {/* <button>Subscribe</button> */}
                             </div>
