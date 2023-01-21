@@ -1,5 +1,5 @@
     import React from "react";
-    import etc from "../assets/img/etc.png";
+    // import etc from "../assets/img/etc.png";
     // import meter2 from "../assets/img/etc.png";
     // import meter3 from "../assets/img/etc.png";
     import Carousel from "react-multi-carousel";
