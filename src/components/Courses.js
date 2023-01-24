@@ -202,7 +202,7 @@
                     <Carousel
                     responsive={responsive}
                     infinite={true}
-                    className="owl-carousel owl-theme skill-slider"
+                    className="owl-carousel owl-theme skill-slider mid"
                     >
                     <div className="item" style={{ paddingBottom: 60, paddingTop: 60, }}>
                         <section className="parent">
