@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp from "../assets/img/color-sharp.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -43,8 +43,18 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="projects">
-      <Container>
+    <section className="skills" id="projects">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <div className="ohh">
+                {/* <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.<br></br> Lorem Ipsum has been the industry's standard
+                dummy text.
+              </p> */}
+        <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
@@ -114,7 +124,12 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt=""></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };
