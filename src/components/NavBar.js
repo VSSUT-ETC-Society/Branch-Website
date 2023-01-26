@@ -1,104 +1,116 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/etc.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react'
+import { useState, useEffect } from 'react'
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import logo from '../assets/img/etc.png'
+import navIcon1 from '../assets/img/nav-icon1.svg'
+import navIcon2 from '../assets/img/nav-icon2.svg'
+import navIcon3 from '../assets/img/nav-icon3.svg'
+import { HashLink } from 'react-router-hash-link'
+import { BrowserRouter as Router } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBars,xmark } from '@fortawesome/free-solid-svg-icons';
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
-
+  const [activeLink, setActiveLink] = useState('home')
+  const [scrolled, setScrolled] = useState(false)
+  const [opened, setOpened] = useState(false)
+  const hamburger = () => {
+    setOpened(!opened)
+  }
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll)
 
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+    setActiveLink(value)
+  }
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
         <Container>
           <Navbar.Brand href="/">
             <img className="log" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
+            <span
+              onClick={() => {
+                hamburger()
+              }}
+              className="fa-sharp fa-solid fa-bars bg-white"
+            >
+              {opened ? "fa-sharp fa-solid fa-bars bg-white" : "fa-regular fa-xmark bg-white"}
+            </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
                 href="#home"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() => onUpdateActiveLink('home')}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 href="#projects"
                 className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === 'projects'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink('projects')}
               >
                 Projects
               </Nav.Link>
               <Nav.Link
                 href="#about"
                 className={
-                  activeLink === "about" ? "active navbar-link" : "navbar-link"
+                  activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("about")}
+                onClick={() => onUpdateActiveLink('about')}
               >
                 About Us
               </Nav.Link>
               <Nav.Link
                 href="#courses"
                 className={
-                  activeLink === "courses"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === 'courses'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("courses")}
+                onClick={() => onUpdateActiveLink('courses')}
               >
                 Courses
               </Nav.Link>
               <Nav.Link
                 href="#skills"
                 className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                  activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("faculties")}
+                onClick={() => onUpdateActiveLink('faculties')}
               >
                 Faculties
               </Nav.Link>
               <Nav.Link
                 href="#students"
                 className={
-                  activeLink === "students"
-                    ? "active navbar-link"
-                    : "navbar-link"
+                  activeLink === 'students'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
                 }
-                onClick={() => onUpdateActiveLink("students")}
+                onClick={() => onUpdateActiveLink('students')}
               >
                 Students
               </Nav.Link>
@@ -125,5 +137,5 @@ export const NavBar = () => {
         </Container>
       </Navbar>
     </Router>
-  );
-};
+  )
+}
